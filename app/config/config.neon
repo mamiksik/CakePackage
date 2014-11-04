@@ -1,0 +1,34 @@
+#
+# SECURITY WARNING: it is CRITICAL that this file & directory are NOT accessible directly via a web browser!
+#
+# If you don't protect this directory from direct web access, anybody will be able to see your passwords.
+# http://nette.org/security-warning
+#
+parameters:
+
+
+php:
+	date.timezone: Europe/Prague
+
+
+nette:
+	application:
+		errorPresenter: Error
+		mapping:
+			*: Cake\*Module\*Presenter
+
+	session:
+		expiration: 14 days
+
+
+services:
+	connection:
+			class: LeanMapper\Connection( %database%, ... )
+	- Cake\Model\Mapper
+	- LeanMapper\DefaultEntityFactory
+	- Cake\Model\UserRepository
+
+	- Cake\Security\Authenticator
+	- Cake\Security\Authorizator
+	- Cake\Routing\RouterFactory
+	router: @cake\Routing\RouterFactory::createRouter
