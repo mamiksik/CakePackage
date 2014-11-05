@@ -1,7 +1,7 @@
-Cake's Package
+Cake Package
 =============
 - Based on Sandbox(by greeny)
-- include LeanMapper, Secure, ACL
+- include LeanMapper, Secure, ACL, basic scss and Bootstrap
 
 License
 -------
