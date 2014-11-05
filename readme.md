@@ -1,7 +1,7 @@
 Cake's Package
 =============
 - Based on Sandbox(by Tomas Blatny)
-- inclide LeanMapper, Secure, ACL
+- include LeanMapper, Secure, ACL
 
 License
 -------
