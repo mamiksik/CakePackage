@@ -1,0 +1,6 @@
+<?php //netteCache[01]000287a:3:{s:4:"time";s:21:"0.74392700 1415141165";s:9:"callbacks";a:1:{i:0;a:3:{i:0;a:2:{i:0;s:19:"Nette\Caching\Cache";i:1;s:9:"checkFile";}i:1;s:95:"/Users/martin/Sites/odpad/test-mapper/app/modules/PublicModule/presenters/HomepagePresenter.php";i:2;i:1415141116;}}s:10:"serialized";b:1;}?>a:1:{s:35:"Cake\PublicModule\HomepagePresenter";a:4:{s:5:"class";s:30:"/**
+ * Homepage presenter.
+ */";s:3:"use";a:3:{s:5:"Nette";s:5:"Nette";s:5:"Model";s:10:"Cake\Model";s:14:"UserRepository";s:25:"Cake\Model\UserRepository";}s:15:"$userRepository";s:34:"/** @var UserRepository @inject */";s:27:"createComponentRegisterForm";s:81:"/**
+     * Sign-in form factory.
+     * @return Nette\Application\UI\Form
+     */";}}

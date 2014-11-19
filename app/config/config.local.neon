@@ -1,0 +1,9 @@
+parameters:
+	database:
+		driver: mysqli
+		host: localhost
+		database: testmapper
+		username: root
+		password: root
+		profiler: TRUE
+		lazy: yes
