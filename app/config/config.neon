@@ -13,6 +13,7 @@ php:
 
 nette:
 	application:
+		catchExceptions: true
 		errorPresenter: Error
 		mapping:
 			*: Cake\*Module\*Presenter
@@ -24,6 +25,14 @@ nette:
 services:
 	connection:
 			class: LeanMapper\Connection( %database%, ... )
+			setup:
+				- @db.panel::register(@connection)
+
+	db.panel:
+		class: Dibi\Bridges\Tracy\Panel
+
+
+
 	- Cake\Model\Mapper
 	- LeanMapper\DefaultEntityFactory
 	- Cake\Model\UserRepository
